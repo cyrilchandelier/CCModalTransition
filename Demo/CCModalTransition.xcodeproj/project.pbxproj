@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1235DCB1982BCC900FDD1D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1235DCA1982BCC900FDD1D7 /* Foundation.framework */; };
+		F1235DCD1982BCC900FDD1D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1235DCC1982BCC900FDD1D7 /* CoreGraphics.framework */; };
+		F1235DCF1982BCC900FDD1D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1235DCE1982BCC900FDD1D7 /* UIKit.framework */; };
+		F1235DD51982BCC900FDD1D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1235DD31982BCC900FDD1D7 /* InfoPlist.strings */; };
+		F1235DD71982BCC900FDD1D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1235DD61982BCC900FDD1D7 /* main.m */; };
+		F1235DDB1982BCC900FDD1D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1235DDA1982BCC900FDD1D7 /* AppDelegate.m */; };
+		F1235DDD1982BCC900FDD1D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1235DDC1982BCC900FDD1D7 /* Images.xcassets */; };
+		F1235DE41982BCC900FDD1D7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1235DE31982BCC900FDD1D7 /* XCTest.framework */; };
+		F1235DE51982BCC900FDD1D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1235DCA1982BCC900FDD1D7 /* Foundation.framework */; };
+		F1235DE61982BCC900FDD1D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1235DCE1982BCC900FDD1D7 /* UIKit.framework */; };
+		F1235DEE1982BCC900FDD1D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1235DEC1982BCC900FDD1D7 /* InfoPlist.strings */; };
+		F1235DF01982BCC900FDD1D7 /* CCModalTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1235DEF1982BCC900FDD1D7 /* CCModalTransitionTests.m */; };
+		F1235E001982BD0200FDD1D7 /* CCModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F1235DFB1982BD0200FDD1D7 /* CCModalTransition.m */; };
+		F1235E011982BD0200FDD1D7 /* PopupModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F1235DFD1982BD0200FDD1D7 /* PopupModalTransition.m */; };
+		F1235E021982BD0200FDD1D7 /* UIViewController+ModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F1235DFF1982BD0200FDD1D7 /* UIViewController+ModalTransition.m */; };
+		F1235E0D1982BEA200FDD1D7 /* PopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1235E081982BEA200FDD1D7 /* PopupViewController.m */; };
+		F1235E0E1982BEA200FDD1D7 /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1235E091982BEA200FDD1D7 /* PopupViewController.xib */; };
+		F1235E0F1982BEA200FDD1D7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1235E0B1982BEA200FDD1D7 /* RootViewController.m */; };
+		F1235E101982BEA200FDD1D7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1235E0C1982BEA200FDD1D7 /* RootViewController.xib */; };
+		F1235E161983AE0100FDD1D7 /* Demo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1235E151983AE0100FDD1D7 /* Demo.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1235DE71982BCC900FDD1D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1235DBF1982BCC900FDD1D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1235DC61982BCC900FDD1D7;
+			remoteInfo = CCModalTransition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1235DC71982BCC900FDD1D7 /* CCModalTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCModalTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1235DCA1982BCC900FDD1D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F1235DCC1982BCC900FDD1D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F1235DCE1982BCC900FDD1D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F1235DD21982BCC900FDD1D7 /* CCModalTransition-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CCModalTransition-Info.plist"; sourceTree = "<group>"; };
+		F1235DD41982BCC900FDD1D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F1235DD61982BCC900FDD1D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1235DD81982BCC900FDD1D7 /* CCModalTransition-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CCModalTransition-Prefix.pch"; sourceTree = "<group>"; };
+		F1235DD91982BCC900FDD1D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F1235DDA1982BCC900FDD1D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F1235DDC1982BCC900FDD1D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F1235DE21982BCC900FDD1D7 /* CCModalTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCModalTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1235DE31982BCC900FDD1D7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F1235DEB1982BCC900FDD1D7 /* CCModalTransitionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CCModalTransitionTests-Info.plist"; sourceTree = "<group>"; };
+		F1235DED1982BCC900FDD1D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F1235DEF1982BCC900FDD1D7 /* CCModalTransitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCModalTransitionTests.m; sourceTree = "<group>"; };
+		F1235DFA1982BD0200FDD1D7 /* CCModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCModalTransition.h; sourceTree = "<group>"; };
+		F1235DFB1982BD0200FDD1D7 /* CCModalTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCModalTransition.m; sourceTree = "<group>"; };
+		F1235DFC1982BD0200FDD1D7 /* PopupModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupModalTransition.h; sourceTree = "<group>"; };
+		F1235DFD1982BD0200FDD1D7 /* PopupModalTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupModalTransition.m; sourceTree = "<group>"; };
+		F1235DFE1982BD0200FDD1D7 /* UIViewController+ModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ModalTransition.h"; sourceTree = "<group>"; };
+		F1235DFF1982BD0200FDD1D7 /* UIViewController+ModalTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ModalTransition.m"; sourceTree = "<group>"; };
+		F1235E071982BEA200FDD1D7 /* PopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupViewController.h; sourceTree = "<group>"; };
+		F1235E081982BEA200FDD1D7 /* PopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupViewController.m; sourceTree = "<group>"; };
+		F1235E091982BEA200FDD1D7 /* PopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
+		F1235E0A1982BEA200FDD1D7 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F1235E0B1982BEA200FDD1D7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F1235E0C1982BEA200FDD1D7 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		F1235E151983AE0100FDD1D7 /* Demo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Demo.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1235DC41982BCC900FDD1D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1235DCD1982BCC900FDD1D7 /* CoreGraphics.framework in Frameworks */,
+				F1235DCF1982BCC900FDD1D7 /* UIKit.framework in Frameworks */,
+				F1235DCB1982BCC900FDD1D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1235DDF1982BCC900FDD1D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1235DE41982BCC900FDD1D7 /* XCTest.framework in Frameworks */,
+				F1235DE61982BCC900FDD1D7 /* UIKit.framework in Frameworks */,
+				F1235DE51982BCC900FDD1D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1235DBE1982BCC900FDD1D7 = {
+			isa = PBXGroup;
+			children = (
+				F1235DF91982BD0200FDD1D7 /* Classes */,
+				F1235DD01982BCC900FDD1D7 /* CCModalTransitionDemo */,
+				F1235DE91982BCC900FDD1D7 /* CCModalTransitionTests */,
+				F1235DC91982BCC900FDD1D7 /* Frameworks */,
+				F1235DC81982BCC900FDD1D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1235DC81982BCC900FDD1D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1235DC71982BCC900FDD1D7 /* CCModalTransition.app */,
+				F1235DE21982BCC900FDD1D7 /* CCModalTransitionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1235DC91982BCC900FDD1D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1235DCA1982BCC900FDD1D7 /* Foundation.framework */,
+				F1235DCC1982BCC900FDD1D7 /* CoreGraphics.framework */,
+				F1235DCE1982BCC900FDD1D7 /* UIKit.framework */,
+				F1235DE31982BCC900FDD1D7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1235DD01982BCC900FDD1D7 /* CCModalTransitionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1235DD91982BCC900FDD1D7 /* AppDelegate.h */,
+				F1235DDA1982BCC900FDD1D7 /* AppDelegate.m */,
+				F1235E131982BEB800FDD1D7 /* ViewControllers */,
+				F1235DDC1982BCC900FDD1D7 /* Images.xcassets */,
+				F1235DD11982BCC900FDD1D7 /* Supporting Files */,
+			);
+			name = CCModalTransitionDemo;
+			path = CCModalTransition;
+			sourceTree = "<group>";
+		};
+		F1235DD11982BCC900FDD1D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1235DD21982BCC900FDD1D7 /* CCModalTransition-Info.plist */,
+				F1235DD31982BCC900FDD1D7 /* InfoPlist.strings */,
+				F1235DD61982BCC900FDD1D7 /* main.m */,
+				F1235DD81982BCC900FDD1D7 /* CCModalTransition-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1235DE91982BCC900FDD1D7 /* CCModalTransitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1235DEF1982BCC900FDD1D7 /* CCModalTransitionTests.m */,
+				F1235DEA1982BCC900FDD1D7 /* Supporting Files */,
+			);
+			path = CCModalTransitionTests;
+			sourceTree = "<group>";
+		};
+		F1235DEA1982BCC900FDD1D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1235DEB1982BCC900FDD1D7 /* CCModalTransitionTests-Info.plist */,
+				F1235DEC1982BCC900FDD1D7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1235DF91982BD0200FDD1D7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F1235E031982BD0B00FDD1D7 /* CCModalTransition */,
+				F1235E041982BD1C00FDD1D7 /* UIViewController+ModalTransitions */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		F1235E031982BD0B00FDD1D7 /* CCModalTransition */ = {
+			isa = PBXGroup;
+			children = (
+				F1235DFA1982BD0200FDD1D7 /* CCModalTransition.h */,
+				F1235DFB1982BD0200FDD1D7 /* CCModalTransition.m */,
+				F1235E051982BD2900FDD1D7 /* Popup */,
+			);
+			name = CCModalTransition;
+			sourceTree = "<group>";
+		};
+		F1235E041982BD1C00FDD1D7 /* UIViewController+ModalTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				F1235DFE1982BD0200FDD1D7 /* UIViewController+ModalTransition.h */,
+				F1235DFF1982BD0200FDD1D7 /* UIViewController+ModalTransition.m */,
+			);
+			name = "UIViewController+ModalTransitions";
+			sourceTree = "<group>";
+		};
+		F1235E051982BD2900FDD1D7 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				F1235DFC1982BD0200FDD1D7 /* PopupModalTransition.h */,
+				F1235DFD1982BD0200FDD1D7 /* PopupModalTransition.m */,
+			);
+			name = Popup;
+			sourceTree = "<group>";
+		};
+		F1235E111982BEA500FDD1D7 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				F1235E071982BEA200FDD1D7 /* PopupViewController.h */,
+				F1235E081982BEA200FDD1D7 /* PopupViewController.m */,
+				F1235E091982BEA200FDD1D7 /* PopupViewController.xib */,
+			);
+			name = Popup;
+			sourceTree = "<group>";
+		};
+		F1235E121982BEAB00FDD1D7 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F1235E151983AE0100FDD1D7 /* Demo.plist */,
+				F1235E0A1982BEA200FDD1D7 /* RootViewController.h */,
+				F1235E0B1982BEA200FDD1D7 /* RootViewController.m */,
+				F1235E0C1982BEA200FDD1D7 /* RootViewController.xib */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		F1235E131982BEB800FDD1D7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1235E121982BEAB00FDD1D7 /* Root */,
+				F1235E111982BEA500FDD1D7 /* Popup */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1235DC61982BCC900FDD1D7 /* CCModalTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1235DF31982BCC900FDD1D7 /* Build configuration list for PBXNativeTarget "CCModalTransition" */;
+			buildPhases = (
+				F1235DC31982BCC900FDD1D7 /* Sources */,
+				F1235DC41982BCC900FDD1D7 /* Frameworks */,
+				F1235DC51982BCC900FDD1D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCModalTransition;
+			productName = CCModalTransition;
+			productReference = F1235DC71982BCC900FDD1D7 /* CCModalTransition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1235DE11982BCC900FDD1D7 /* CCModalTransitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1235DF61982BCC900FDD1D7 /* Build configuration list for PBXNativeTarget "CCModalTransitionTests" */;
+			buildPhases = (
+				F1235DDE1982BCC900FDD1D7 /* Sources */,
+				F1235DDF1982BCC900FDD1D7 /* Frameworks */,
+				F1235DE01982BCC900FDD1D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1235DE81982BCC900FDD1D7 /* PBXTargetDependency */,
+			);
+			name = CCModalTransitionTests;
+			productName = CCModalTransitionTests;
+			productReference = F1235DE21982BCC900FDD1D7 /* CCModalTransitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1235DBF1982BCC900FDD1D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Cyril Chandelier";
+				TargetAttributes = {
+					F1235DE11982BCC900FDD1D7 = {
+						TestTargetID = F1235DC61982BCC900FDD1D7;
+					};
+				};
+			};
+			buildConfigurationList = F1235DC21982BCC900FDD1D7 /* Build configuration list for PBXProject "CCModalTransition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F1235DBE1982BCC900FDD1D7;
+			productRefGroup = F1235DC81982BCC900FDD1D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1235DC61982BCC900FDD1D7 /* CCModalTransition */,
+				F1235DE11982BCC900FDD1D7 /* CCModalTransitionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1235DC51982BCC900FDD1D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1235DD51982BCC900FDD1D7 /* InfoPlist.strings in Resources */,
+				F1235E161983AE0100FDD1D7 /* Demo.plist in Resources */,
+				F1235DDD1982BCC900FDD1D7 /* Images.xcassets in Resources */,
+				F1235E101982BEA200FDD1D7 /* RootViewController.xib in Resources */,
+				F1235E0E1982BEA200FDD1D7 /* PopupViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1235DE01982BCC900FDD1D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1235DEE1982BCC900FDD1D7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1235DC31982BCC900FDD1D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1235E021982BD0200FDD1D7 /* UIViewController+ModalTransition.m in Sources */,
+				F1235E0F1982BEA200FDD1D7 /* RootViewController.m in Sources */,
+				F1235E0D1982BEA200FDD1D7 /* PopupViewController.m in Sources */,
+				F1235E001982BD0200FDD1D7 /* CCModalTransition.m in Sources */,
+				F1235E011982BD0200FDD1D7 /* PopupModalTransition.m in Sources */,
+				F1235DDB1982BCC900FDD1D7 /* AppDelegate.m in Sources */,
+				F1235DD71982BCC900FDD1D7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1235DDE1982BCC900FDD1D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1235DF01982BCC900FDD1D7 /* CCModalTransitionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1235DE81982BCC900FDD1D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1235DC61982BCC900FDD1D7 /* CCModalTransition */;
+			targetProxy = F1235DE71982BCC900FDD1D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1235DD31982BCC900FDD1D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1235DD41982BCC900FDD1D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F1235DEC1982BCC900FDD1D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1235DED1982BCC900FDD1D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1235DF11982BCC900FDD1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1235DF21982BCC900FDD1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1235DF41982BCC900FDD1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CCModalTransition/CCModalTransition-Prefix.pch";
+				INFOPLIST_FILE = "CCModalTransition/CCModalTransition-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F1235DF51982BCC900FDD1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CCModalTransition/CCModalTransition-Prefix.pch";
+				INFOPLIST_FILE = "CCModalTransition/CCModalTransition-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F1235DF71982BCC900FDD1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CCModalTransition.app/CCModalTransition";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CCModalTransition/CCModalTransition-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CCModalTransitionTests/CCModalTransitionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F1235DF81982BCC900FDD1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CCModalTransition.app/CCModalTransition";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CCModalTransition/CCModalTransition-Prefix.pch";
+				INFOPLIST_FILE = "CCModalTransitionTests/CCModalTransitionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1235DC21982BCC900FDD1D7 /* Build configuration list for PBXProject "CCModalTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1235DF11982BCC900FDD1D7 /* Debug */,
+				F1235DF21982BCC900FDD1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1235DF31982BCC900FDD1D7 /* Build configuration list for PBXNativeTarget "CCModalTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1235DF41982BCC900FDD1D7 /* Debug */,
+				F1235DF51982BCC900FDD1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1235DF61982BCC900FDD1D7 /* Build configuration list for PBXNativeTarget "CCModalTransitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1235DF71982BCC900FDD1D7 /* Debug */,
+				F1235DF81982BCC900FDD1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1235DBF1982BCC900FDD1D7 /* Project object */;
+}
