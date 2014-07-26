@@ -20,4 +20,8 @@ typedef NS_ENUM(NSInteger, ModalTransitionType) {
 
 @interface UIViewController (ModalTransition) <UIViewControllerTransitioningDelegate>
 
+// Register / Unregister a custom transition
+- (void)registerClass:(Class)transitionClass forTransitionType:(NSInteger)transitionType;
+- (void)unregisterClassForTransitionType:(NSInteger)transitionType;
+
 @end
