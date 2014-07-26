@@ -12,7 +12,8 @@
 
 typedef NS_ENUM(NSInteger, ModalTransitionType) {
     ModalTransitionTypeNone = 9999,
-    ModalTransitionTypePopup
+    ModalTransitionTypePopup,
+    ModalTransitionTypeTopSliding
 };
 
 

@@ -8,5 +8,11 @@
 		<key>viewController</key>
 		<string>PopupViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>Top Sliding</string>
+		<key>viewController</key>
+		<string>NotificationViewController</string>
+	</dict>
 </array>
 </plist>

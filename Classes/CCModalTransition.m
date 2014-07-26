@@ -27,6 +27,7 @@
 {
     UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    BOOL animated = transitionContext.isAnimated;
     
     // Present or dismiss
     if (toViewController.isBeingPresented)
@@ -36,23 +37,43 @@
         self.presentedViewController = toViewController;
         
         // Present view controller
-        [self presentViewControllerWithContext:transitionContext];
+        [self presentViewControllerWithContext:transitionContext animated:animated];
     }
     else
     {
         // Dismiss view contorller
-        [self dismissViewControllerWithContext:transitionContext];
+        [self dismissViewControllerWithContext:transitionContext animated:animated];
     }
 }
 
-- (void)presentViewControllerWithContext:(id <UIViewControllerContextTransitioning>)transitionContext
+- (void)presentViewControllerWithContext:(id <UIViewControllerContextTransitioning>)transitionContext animated:(BOOL)animated
 {
     @throw @"To be implemented in subclasses";
 }
 
-- (void)dismissViewControllerWithContext:(id <UIViewControllerContextTransitioning>)transitionContext
+- (void)dismissViewControllerWithContext:(id <UIViewControllerContextTransitioning>)transitionContext animated:(BOOL)animated
 {
     @throw @"To be implemented in subclasses";
+}
+
+#pragma mark - Utils
++ (float)rotationAngle
+{
+    switch ([[UIApplication sharedApplication] statusBarOrientation])
+    {
+        case UIInterfaceOrientationPortraitUpsideDown:
+            return M_PI;
+            
+        case UIInterfaceOrientationLandscapeLeft:
+            return -M_PI_2;
+            
+        case UIInterfaceOrientationLandscapeRight:
+            return M_PI_2;
+            
+        default:
+        case UIInterfaceOrientationPortrait:
+            return 0.0f;
+    }
 }
 
 @end

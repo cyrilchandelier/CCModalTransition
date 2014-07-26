@@ -27,6 +27,9 @@
 		F1235E0F1982BEA200FDD1D7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1235E0B1982BEA200FDD1D7 /* RootViewController.m */; };
 		F1235E101982BEA200FDD1D7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1235E0C1982BEA200FDD1D7 /* RootViewController.xib */; };
 		F1235E161983AE0100FDD1D7 /* Demo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1235E151983AE0100FDD1D7 /* Demo.plist */; };
+		F1235E1A1983D3A500FDD1D7 /* TopSlidingModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F1235E191983D3A500FDD1D7 /* TopSlidingModalTransition.m */; };
+		F1235E1F1983D97200FDD1D7 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1235E1D1983D97200FDD1D7 /* NotificationViewController.m */; };
+		F1235E201983D97200FDD1D7 /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1235E1E1983D97200FDD1D7 /* NotificationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,11 @@
 		F1235E0B1982BEA200FDD1D7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		F1235E0C1982BEA200FDD1D7 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		F1235E151983AE0100FDD1D7 /* Demo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Demo.plist; sourceTree = "<group>"; };
+		F1235E181983D3A500FDD1D7 /* TopSlidingModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopSlidingModalTransition.h; sourceTree = "<group>"; };
+		F1235E191983D3A500FDD1D7 /* TopSlidingModalTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopSlidingModalTransition.m; sourceTree = "<group>"; };
+		F1235E1C1983D97200FDD1D7 /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		F1235E1D1983D97200FDD1D7 /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		F1235E1E1983D97200FDD1D7 /* NotificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +191,7 @@
 			children = (
 				F1235DFA1982BD0200FDD1D7 /* CCModalTransition.h */,
 				F1235DFB1982BD0200FDD1D7 /* CCModalTransition.m */,
+				F1235E171983D1A800FDD1D7 /* TopSliding */,
 				F1235E051982BD2900FDD1D7 /* Popup */,
 			);
 			name = CCModalTransition;
@@ -230,10 +239,30 @@
 		F1235E131982BEB800FDD1D7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F1235E1B1983D95F00FDD1D7 /* Notification */,
 				F1235E121982BEAB00FDD1D7 /* Root */,
 				F1235E111982BEA500FDD1D7 /* Popup */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F1235E171983D1A800FDD1D7 /* TopSliding */ = {
+			isa = PBXGroup;
+			children = (
+				F1235E181983D3A500FDD1D7 /* TopSlidingModalTransition.h */,
+				F1235E191983D3A500FDD1D7 /* TopSlidingModalTransition.m */,
+			);
+			name = TopSliding;
+			sourceTree = "<group>";
+		};
+		F1235E1B1983D95F00FDD1D7 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				F1235E1C1983D97200FDD1D7 /* NotificationViewController.h */,
+				F1235E1D1983D97200FDD1D7 /* NotificationViewController.m */,
+				F1235E1E1983D97200FDD1D7 /* NotificationViewController.xib */,
+			);
+			name = Notification;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +343,7 @@
 				F1235DD51982BCC900FDD1D7 /* InfoPlist.strings in Resources */,
 				F1235E161983AE0100FDD1D7 /* Demo.plist in Resources */,
 				F1235DDD1982BCC900FDD1D7 /* Images.xcassets in Resources */,
+				F1235E201983D97200FDD1D7 /* NotificationViewController.xib in Resources */,
 				F1235E101982BEA200FDD1D7 /* RootViewController.xib in Resources */,
 				F1235E0E1982BEA200FDD1D7 /* PopupViewController.xib in Resources */,
 			);
@@ -337,7 +367,9 @@
 				F1235E021982BD0200FDD1D7 /* UIViewController+ModalTransition.m in Sources */,
 				F1235E0F1982BEA200FDD1D7 /* RootViewController.m in Sources */,
 				F1235E0D1982BEA200FDD1D7 /* PopupViewController.m in Sources */,
+				F1235E1A1983D3A500FDD1D7 /* TopSlidingModalTransition.m in Sources */,
 				F1235E001982BD0200FDD1D7 /* CCModalTransition.m in Sources */,
+				F1235E1F1983D97200FDD1D7 /* NotificationViewController.m in Sources */,
 				F1235E011982BD0200FDD1D7 /* PopupModalTransition.m in Sources */,
 				F1235DDB1982BCC900FDD1D7 /* AppDelegate.m in Sources */,
 				F1235DD71982BCC900FDD1D7 /* main.m in Sources */,

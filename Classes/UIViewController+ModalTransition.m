@@ -97,6 +97,7 @@ static void * registeredTransitionTypesKey = &registeredTransitionTypesKey;
         
         // Built-in transitions
         [registeredTransitionTypes setObject:@"PopupModalTransition" forKey:@(ModalTransitionTypePopup)];
+        [registeredTransitionTypes setObject:@"TopSlidingModalTransition" forKey:@(ModalTransitionTypeTopSliding)];
     }
     
     return registeredTransitionTypes;

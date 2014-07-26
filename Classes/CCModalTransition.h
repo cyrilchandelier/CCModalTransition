@@ -8,6 +8,13 @@
 
 @interface CCModalTransition : NSObject <UIViewControllerAnimatedTransitioning>
 
+// Compute rotation angle to apply
++ (float)rotationAngle;
+
+// Subclasses must implement these method to control presentation/dismiss
+- (void)presentViewControllerWithContext:(id <UIViewControllerContextTransitioning>)transitionContext animated:(BOOL)animated;
+- (void)dismissViewControllerWithContext:(id <UIViewControllerContextTransitioning>)transitionContext animated:(BOOL)animated;
+
 // View controllers
 @property (nonatomic, strong) UIViewController *presentingViewController;
 @property (nonatomic, strong) UIViewController *presentedViewController;

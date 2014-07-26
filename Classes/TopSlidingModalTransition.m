@@ -1,16 +1,16 @@
 //
-//  PopupModalTransition.m
+//  TopSlidingModalTransition.m
 //  CCModalTransition
 //
-//  Created by Cyril Chandelier on 24/07/14.
+//  Created by Cyril Chandelier on 26/07/14.
 //  Copyright (c) 2014 Cyril Chandelier. All rights reserved.
 //
 
-#import "PopupModalTransition.h"
+#import "TopSlidingModalTransition.h"
 
 
 
-@interface PopupModalTransition ()
+@interface TopSlidingModalTransition ()
 
 // Dimmed background
 @property (nonatomic, strong) UIView *dimmedBackgroundView;
@@ -20,7 +20,7 @@
 
 
 
-@implementation PopupModalTransition
+@implementation TopSlidingModalTransition
 
 #pragma mark - Constructor
 - (instancetype)init
@@ -43,7 +43,7 @@
 #pragma mark - Transition methods
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {
-    return 0.2f;
+    return 0.3f;
 }
 
 - (void)presentViewControllerWithContext:(id <UIViewControllerContextTransitioning>)transitionContext animated:(BOOL)animated
@@ -67,7 +67,9 @@
         NSTimeInterval animationDuration = [self transitionDuration:transitionContext];
         
         // Prepare animation
-        self.presentedViewController.view.transform = CGAffineTransformScale(transform, 0.0f, 0.0f);
+        CGRect frame = self.presentedViewController.view.frame;
+        frame.origin.y = -frame.size.height;
+        self.presentedViewController.view.frame = frame;
         self.dimmedBackgroundView.alpha = 0.0f;
         
         // Add subviews to container
@@ -83,12 +85,16 @@
                              
                          }];
         
-        // The view will grow a bit bigger than its final size
+        // The view will come from top
         [UIView animateWithDuration:animationDuration
+                              delay:0.0f
+                            options:UIViewAnimationOptionCurveEaseOut
                          animations:^{
                              
-                             // Scale to normal size
-                             self.presentedViewController.view.transform = CGAffineTransformScale(transform, 1.0f, 1.0f);
+                             // Slide down
+                             CGRect frame = self.presentedViewController.view.frame;
+                             frame.origin.y = 0;
+                             self.presentedViewController.view.frame = frame;
                              
                          }
                          completion:^(BOOL finished) {
@@ -120,8 +126,10 @@
         [UIView animateWithDuration:[self transitionDuration:transitionContext]
                          animations:^{
                              
-                             // Scale to nothing
-                             self.presentedViewController.view.transform = CGAffineTransformScale(self.presentedViewController.view.transform, 0.0f, 0.0f);
+                             // Slide up
+                             CGRect frame = self.presentedViewController.view.frame;
+                             frame.origin.y = -frame.size.height;
+                             self.presentedViewController.view.frame = frame;
                              
                              // Fade out
                              self.dimmedBackgroundView.alpha = 0.0f;
