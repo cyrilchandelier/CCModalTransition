@@ -74,3 +74,7 @@ The declared ```transitionType``` should be used when declaring modal transition
 ```
 self.modalTransitionStyle = MyCustomModalTransitionIdentifier;
 ```
+
+##Note about landscape transitions
+
+As part of iOS7, interface transitions in landscape orientation are not properly working. Workarounds exist (read this article for more details: http://www.brightec.co.uk/blog/ios-7-custom-view-controller-transitions-and-rotation-making-it-all-work) and should be handled directly by CCModalTransition subclasses.
