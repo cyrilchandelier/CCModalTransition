@@ -3,6 +3,8 @@ CCModalTransition
 
 Extensible &amp; easy to use modal transitioning using UIViewControllerAnimatedTransitioning API
 
+![ScreenShot](https://raw.github.com/cyrilchandelier/CCModalTransition/master/Assets/CCModalTransition.gif)
+
 ##Installation
 
 There are two ways to use the library in your project:
