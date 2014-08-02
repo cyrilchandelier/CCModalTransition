@@ -8,6 +8,7 @@
 
 #import "UIViewController+ModalTransition.h"
 #import "CCModalTransition.h"
+#import "CCModalTransitionController.h"
 #import <objc/runtime.h>
 
 
@@ -39,17 +40,7 @@
     [self.registeredTransitionTypes removeObjectForKey:@(transitionType)];
 }
 
-#pragma mark - UIViewControllerTransitioningDelegate methods
-- (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
-{
-    return self.currentTransition;
-}
-
-- (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
-{
-    return self.currentTransition;
-}
-
+#pragma mark - Modal transition hook
 - (void)customPresentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)animated completion:(void (^)(void))completion
 {
     // Retrieve transition from view controller modalTransitionStyle property
@@ -61,12 +52,13 @@
         return;
     }
     
-    // Set self as transitioning delegate
-    viewControllerToPresent.transitioningDelegate = self;
-    viewControllerToPresent.modalPresentationStyle = UIModalPresentationCustom;
-    
     // Build transition
-    self.currentTransition = [[NSClassFromString(transitionClassName) alloc] init];
+    CCModalTransition *transition = [[NSClassFromString(transitionClassName) alloc] init];
+    self.transitionController = [[CCModalTransitionController alloc] initWithModalTransition:transition];
+    
+    // Set self as transitioning delegate
+    viewControllerToPresent.transitioningDelegate = self.transitionController;
+    viewControllerToPresent.modalPresentationStyle = UIModalPresentationCustom;
     
     // Call super
     [self customPresentViewController:viewControllerToPresent animated:animated completion:completion];
@@ -74,17 +66,17 @@
 
 #pragma mark - Private getters and setters
 
-static void * currentTransitionKey = &currentTransitionKey;
+static void * transitionControllerKey = &transitionControllerKey;
 static void * registeredTransitionTypesKey = &registeredTransitionTypesKey;
 
-- (CCModalTransition *)currentTransition
+- (CCModalTransitionController *)transitionController
 {
-    return objc_getAssociatedObject(self, &currentTransitionKey);
+    return objc_getAssociatedObject(self, &transitionControllerKey);
 }
 
-- (void)setCurrentTransition:(CCModalTransition *)transition
+- (void)setTransitionController:(CCModalTransitionController *)transitionController
 {
-    objc_setAssociatedObject(self, &currentTransitionKey, transition, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, &transitionControllerKey, transitionController, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (NSMutableDictionary *)registeredTransitionTypes

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F10221D2198DAD4C00B593C7 /* CCModalTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10221D1198DAD4C00B593C7 /* CCModalTransitionController.m */; };
 		F1235DCB1982BCC900FDD1D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1235DCA1982BCC900FDD1D7 /* Foundation.framework */; };
 		F1235DCD1982BCC900FDD1D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1235DCC1982BCC900FDD1D7 /* CoreGraphics.framework */; };
 		F1235DCF1982BCC900FDD1D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1235DCE1982BCC900FDD1D7 /* UIKit.framework */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F10221D0198DAD4C00B593C7 /* CCModalTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCModalTransitionController.h; sourceTree = "<group>"; };
+		F10221D1198DAD4C00B593C7 /* CCModalTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCModalTransitionController.m; sourceTree = "<group>"; };
 		F1235DC71982BCC900FDD1D7 /* CCModalTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCModalTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1235DCA1982BCC900FDD1D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F1235DCC1982BCC900FDD1D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -103,6 +106,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F10221CF198DAD2B00B593C7 /* CCModalTransitionController */ = {
+			isa = PBXGroup;
+			children = (
+				F10221D0198DAD4C00B593C7 /* CCModalTransitionController.h */,
+				F10221D1198DAD4C00B593C7 /* CCModalTransitionController.m */,
+			);
+			name = CCModalTransitionController;
+			sourceTree = "<group>";
+		};
 		F1235DBE1982BCC900FDD1D7 = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				F1235E031982BD0B00FDD1D7 /* CCModalTransition */,
+				F10221CF198DAD2B00B593C7 /* CCModalTransitionController */,
 				F1235E041982BD1C00FDD1D7 /* UIViewController+ModalTransitions */,
 			);
 			name = Classes;
@@ -364,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10221D2198DAD4C00B593C7 /* CCModalTransitionController.m in Sources */,
 				F1235E021982BD0200FDD1D7 /* UIViewController+ModalTransition.m in Sources */,
 				F1235E0F1982BEA200FDD1D7 /* RootViewController.m in Sources */,
 				F1235E0D1982BEA200FDD1D7 /* PopupViewController.m in Sources */,
