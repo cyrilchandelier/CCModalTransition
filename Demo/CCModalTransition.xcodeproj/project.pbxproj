@@ -193,7 +193,7 @@
 			children = (
 				F1235E031982BD0B00FDD1D7 /* CCModalTransition */,
 				F10221CF198DAD2B00B593C7 /* CCModalTransitionController */,
-				F1235E041982BD1C00FDD1D7 /* UIViewController+ModalTransitions */,
+				F1235E041982BD1C00FDD1D7 /* UIViewController+ModalTransition */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -210,13 +210,13 @@
 			name = CCModalTransition;
 			sourceTree = "<group>";
 		};
-		F1235E041982BD1C00FDD1D7 /* UIViewController+ModalTransitions */ = {
+		F1235E041982BD1C00FDD1D7 /* UIViewController+ModalTransition */ = {
 			isa = PBXGroup;
 			children = (
 				F1235DFE1982BD0200FDD1D7 /* UIViewController+ModalTransition.h */,
 				F1235DFF1982BD0200FDD1D7 /* UIViewController+ModalTransition.m */,
 			);
-			name = "UIViewController+ModalTransitions";
+			name = "UIViewController+ModalTransition";
 			sourceTree = "<group>";
 		};
 		F1235E051982BD2900FDD1D7 /* Popup */ = {
