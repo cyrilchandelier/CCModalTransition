@@ -21,10 +21,15 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
-        // Swizzle implementation of presentViewController with a custom that detects custom transition types
+        // Swizzle implementation of presentViewController with a custom one that detects custom transition types
         Method presentViewControllerMethod = class_getInstanceMethod(self, @selector(presentViewController:animated:completion:));
         Method customPresentViewControllerMethod = class_getInstanceMethod(self, @selector(customPresentViewController:animated:completion:));
         method_exchangeImplementations(presentViewControllerMethod, customPresentViewControllerMethod);
+        
+        // Swizzle implementation of dismissViewController with a custom one that will free up memory
+        Method dismissViewControllerMethod = class_getInstanceMethod(self, @selector(dismissViewControllerAnimated:completion:));
+        Method customDismissViewControllerMethod = class_getInstanceMethod(self, @selector(customDismissViewControllerMethod:completion:));
+        method_exchangeImplementations(dismissViewControllerMethod, customDismissViewControllerMethod);
         
     });
 }
@@ -47,7 +52,7 @@
     NSString *transitionClassName = [self.registeredTransitionTypes objectForKey:@(viewControllerToPresent.modalTransitionStyle)];
     if (!transitionClassName)
     {
-        // Undefined transition? Present modal view normally
+        // Undefined transition? Present modal view normaly
         [self customPresentViewController:viewControllerToPresent animated:animated completion:completion];
         return;
     }
@@ -60,8 +65,17 @@
     viewControllerToPresent.transitioningDelegate = self.transitionController;
     viewControllerToPresent.modalPresentationStyle = UIModalPresentationCustom;
     
-    // Call super
+    // Call initial method
     [self customPresentViewController:viewControllerToPresent animated:animated completion:completion];
+}
+
+- (void)customDismissViewControllerMethod:(BOOL)flag completion:(void (^)(void))completion
+{
+    // Free up memory
+    self.transitionController = nil;
+    
+    // Call initial method
+    [self customDismissViewControllerMethod:flag completion:completion];
 }
 
 #pragma mark - Private getters and setters

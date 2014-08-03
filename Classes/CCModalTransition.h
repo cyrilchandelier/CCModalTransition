@@ -16,7 +16,7 @@
 - (void)dismissViewControllerWithContext:(id <UIViewControllerContextTransitioning>)transitionContext animated:(BOOL)animated;
 
 // View controllers
-@property (nonatomic, strong) UIViewController *presentingViewController;
-@property (nonatomic, strong) UIViewController *presentedViewController;
+@property (nonatomic, weak) UIViewController *presentingViewController;
+@property (nonatomic, weak) UIViewController *presentedViewController;
 
 @end

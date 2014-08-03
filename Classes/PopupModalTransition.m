@@ -60,6 +60,7 @@
     CGAffineTransform transform = CGAffineTransformIdentity;
     transform = CGAffineTransformRotate(transform, [CCModalTransition rotationAngle]);
     self.presentedViewController.view.transform = transform;
+    [self.presentedViewController.view setNeedsDisplay];
     
     // Animate
     if (animated)
