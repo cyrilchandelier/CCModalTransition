@@ -104,6 +104,9 @@ static void * registeredTransitionTypesKey = &registeredTransitionTypesKey;
         // Built-in transitions
         [registeredTransitionTypes setObject:@"PopupModalTransition" forKey:@(ModalTransitionTypePopup)];
         [registeredTransitionTypes setObject:@"TopSlidingModalTransition" forKey:@(ModalTransitionTypeTopSliding)];
+
+        // Store created dictionary
+        objc_setAssociatedObject(self, &registeredTransitionTypesKey, registeredTransitionTypes, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     
     return registeredTransitionTypes;
